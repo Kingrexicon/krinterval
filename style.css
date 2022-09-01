@@ -1,47 +1,160 @@
-body{
-    background-image: linear-gradient(rgb(45,50,53), rgb(96,104,106));
+body {
+    background-image: linear-gradient(rgb(45, 50, 53), rgb(96, 104, 106));
     width: 100;
     background-repeat: no-repeat;
-    height:500px;
+    height: 500px;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
 }
-.cover{
+
+.cover {
     border-radius: 14px;
     /* box-shadow: 0 102px 10px 0.5px rgb(55, 49, 46); */
     /* filter: invert(80%); */
-    background-color: rgb(69,74,81);
+    background-color: rgb(69, 74, 81);
 
 }
 
 
-.big{
-    background-image: radial-gradient( rgb(38,48,74),rgb(57,76,105));
-display: flex;
-justify-content: center;
+.big {
+    background-image: radial-gradient(rgb(38, 48, 74), rgb(57, 76, 105));
+    display: flex;
+    border-radius: 10px;
+    /* border: 0.5px solid rgb(69,74,81); */
+    box-shadow: 0 0 2px 0.2px rgb(23, 24, 26);
+    justify-content: center;
 }
 
-.btn{
+.btn {
+    background-image: radial-gradient(rgb(166, 166, 166), rgb(132, 132, 132));
+
     width: 100%;
     display: flex;
+
 }
 
-button{
+button {
     width: 50%;
-   display: flex;
-   justify-content: center;
+    display: flex;
+    justify-content: center;
 }
 
-input{
+input {
     background-color: transparent;
     /* border: none; */
-  width: 30%;
-    height:80px;
- 
+    width: 30%;
+    height: 80px;
+
 }
 
-input a{
+input a {
     font-size: 10px;
+}
+
+@keyframes circle {
+    0% {
+        border: 12px double rgb(15, 139, 248);
+        /* background-color: blue; */
+
+    }
+
+    25% {
+
+        border: 12px double rgb(235, 245, 53);
+        /* background-color: rgb(189, 189, 9); */
+    }
+
+    50% {
+
+        border: 12px double rgb(45, 243, 104);
+        /* background-color: green; */
+    }
+
+    75% {
+
+        border: 12px double rgb(152, 58, 246);
+        /* background-color: purple; */
+    }
+
+    100% {
+
+        border: 12px double rgb(231, 38, 38);
+        /* background-color: red; */
+    }
+
+}
+
+
+@keyframes long {
+    0% {
+        box-shadow: 0 0 10px 3px rgb(15, 139, 248);
+        /* background-color: blue; */
+        transform: rotatez(0deg);
+
+    }
+
+    25% {
+        transform: rotatez(90deg); 
+        box-shadow: 0 0 10px 3px rgb(235, 245, 53);
+        /* background-color: rgb(189, 189, 9); */
+    }
+
+    50% {
+        transform: rotatez(180deg); 
+        box-shadow: 0 0 10px 3px rgb(45, 243, 104);
+        /* background-color: green; */
+    }
+
+    75% {
+        transform: rotatez(270deg); 
+        box-shadow: 0 0 10px 3px rgb(152, 58, 246);
+
+        /* background-color: purple; */
+    }
+
+    100% {
+        transform: rotatez(360deg);
+        box-shadow: 0 0 10px 3px rgb(231, 38, 38);
+        /* background-color: red; */
+    }
+
+}
+
+#clock {
+    width: 200px;
+    height: 200px;
+    border: double 12px black;
+    background: rgb(38, 48, 74);
+    border-radius: 50%;
+    animation-name:circle ;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-direction: normal;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+#long {
+    position: absolute;
+    width: 8%;
+    height: 70%;
+    background-color: rgb(38, 48, 74);
+    animation-name: long;
+    animation-iteration-count: infinite;
+    animation-duration: 60s;
+    animation-delay: 0s;
+    animation-play-state: running;
+    animation-direction: normal;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    border-top: solid black 3px;
+
 }

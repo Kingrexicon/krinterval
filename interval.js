@@ -4,15 +4,16 @@ const countTimer = () => {
     let myMinute = minutes.value
     let myseconds = seconds.value
     
-      setTimeout(countTimer, 100)
+       myTime = setTimeout(countTimer, 1000)
       if (myhour == 0 && myMinute == 0 && myseconds == 0) {
         hour.value = 0
         minutes.value = 0
         seconds.value = 1
+        time.innerHTML = `<div id="clock"><div id="long"> </div> </div>`
       }
       else if (seconds.value != 0 && seconds.value < 60) {
         seconds.value++
-        
+
       }
       else if (minutes.value >= 0 && seconds.value == 60 && minutes.value < 60){
         seconds.value = 1
@@ -24,14 +25,26 @@ const countTimer = () => {
         seconds.value = 1
         hour.value ++
       }
+
     }
-    
-    let myTime = setTimeout
+  
+
+
 
     const countStop = () => {
-  location.reload()
-     
+clearTimeout(myTime)
+
+ myhour = 0
+ myMinute = 0
+seconds.value = 0
+
     }
+
+    const countPause =() =>{
+
+      clearTimeout(myTime)
+     
+      }
 
     
      
