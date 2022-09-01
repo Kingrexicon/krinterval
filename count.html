@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
@@ -8,24 +9,30 @@
     <link rel="stylesheet" href="bootstrap.css">
     <link rel="stylesheet" href="style.css">
 </head>
+
 <body>
-    <div class=" cover p-4 "><center class="center fs-2"> Timer <br><em class="fs-6">input your values then click on the start button!</em></center>
-
     <div class=" cover p-4 ">
-        <div class=" px-5 py-4 big " >
-<input placeholder="hr" type="number" id="hour">
-<input placeholder="min" type="number" id="minutes">
-<input placeholder="sec" type="number" id="seconds"></div><div class="btn">
-<button class="btn btn-outline-primary  " onclick="countTimer()">start</button>
-<button class="btn btn-outline-primary  " onclick="countPause()">Pause</button>
-<button class="btn btn-outline-primary  " onclick="countStop()">Stop countdown</button>
-</div>
+        <center class="center fs-2"> Timer <br><em class="fs-6">input your values then click on the start button!</em>
+        </center>
 
-<center> <div id="time">
-   
-</div></center>
+        <div class=" cover p-4 ">
+            <div class=" px-5 py-4 big ">
+                <input placeholder="hr" type="number" id="hour">
+                <input placeholder="min" type="number" id="minutes">
+                <input placeholder="sec" type="number" id="seconds">
+            </div>
+            <div class="btn">
+                <button class="btn btn-outline-primary  " onclick="countTimer()">start</button>
+                <button class="btn btn-outline-primary  " onclick="countPause()">Pause</button>
+                <button class="btn btn-outline-primary  " onclick="countStop()">Stop countdown</button>
+            </div>
 
-</div><a class="" href="interval.html">go to Stopwatch</a>
-<script src="count.js"></script>
+            <center>
+                <div id="time"></div>
+            </center>
+
+        </div><a class="" href="interval.html">go to Stopwatch</a>
+        <script src="count.js"></script>
 </body>
+
 </html>
