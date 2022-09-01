@@ -34,15 +34,17 @@ const countTimer = () => {
     const countStop = () => {
 clearTimeout(myTime)
 
- myhour = 0
- myMinute = 0
+ hours.value = 0
+ minutes.value = 0
 seconds.value = 0
+time.innerHTML = ``
 
     }
 
     const countPause =() =>{
 
       clearTimeout(myTime)
+      time.innerHTML = ``
      
       }
 

@@ -11,22 +11,22 @@
 </head>
 
 <body>
-    <div class=" cover p-4 "><center> st</center>
-    <div class=" px-5 py-4 big " >
-        <input placeholder="hr" type="number" id="hour">:
-        <input placeholder="min" type="number" id="minutes">:
-        <input placeholder="sec" type="number" id="seconds">:
+    <div class=" cover p-4 "><center class="center me-3"> StopWatch <br> <em>click on the start buttom!</center>
+    <div class=" user-select-none   px-5 py-4 big " >
+        <input class=" user-select-none " placeholder="hr" type="number" id="hour">:
+        <input class=" user-select-none" placeholder="min" type="number" id="minutes">:
+        <input class=" user-select-none  "  placeholder="sec" type="number" id="seconds">:
     </div><div class="btn gap-2">
     <button class="btn btn-outline-primary  " onclick="countTimer()">start</button>
     <button class="btn btn-outline-primary  " onclick="countPause()">Pause</button>
-    <button class="btn btn-outline-primary  " onclick="countStop()">Stop countdown</button>
+    <button class="btn btn-outline-primary  " onclick="countStop()">Reset</button>
 </div>
 
 
 <center> <div id="time">
    
 </div></center>
-</div>
+</div><a class="" href="count.html">go to timer</a>
     <script src="interval.js"></script>
 </body>
 

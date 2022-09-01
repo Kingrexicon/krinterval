@@ -48,6 +48,13 @@ input {
     height: 80px;
 
 }
+.input {
+    background-color: transparent;
+    /* border: none; */
+    width: 30%;
+    height: 80px;
+
+}
 
 input a {
     font-size: 10px;
