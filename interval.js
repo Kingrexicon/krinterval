@@ -34,7 +34,7 @@ const countTimer = () => {
     const countStop = () => {
 clearTimeout(myTime)
 
- hours.value = 0
+ hour.value = 0
  minutes.value = 0
 seconds.value = 0
 time.innerHTML = ``
